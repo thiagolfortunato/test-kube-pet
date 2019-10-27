@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: test-kube-pet-ingress
+  namespace: test-kube-pet
+  annotations:
+    INGRESS.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+    - http:
+        paths:
+        - path: /
+          backend:
+            serviceName: test-kube-pet-service
+            servicePort: 80
+

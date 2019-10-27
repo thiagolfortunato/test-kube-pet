@@ -1,0 +1,13 @@
+{
+  "name": "teste-kubernetes-petlove",
+  "version": "0.0.1",
+  "description": "Teste K8 Petlove",
+  "main": "app.js",
+  "repository": "",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.16.0"
+  }
+}
